@@ -1,0 +1,63 @@
+{
+    "name": "@priorit/localiser",
+    "version": "1.0.0",
+    "description": "Utility functions to fix localisation issues in TypeScript",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "src",
+        "dist"
+    ],
+    "scripts": {
+        "prepack": "tsc -p tsconfig.json",
+        "test": "jasmine --config=jasmine.json",
+        "build": "tsc -p tsconfig.json",
+        "watch": "tsc -w -p tsconfig.json",
+        "codelint": "eslint -c .eslintrc.json src/*",
+        "stylelint": "npx stylelint '**/*.scss'"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://gitlab.com/priorit/piworks/pilocaliser-ts.git"
+    },
+    "keywords": [
+        "localisation",
+        "locale",
+        "i18n",
+        "typescript"
+    ],
+    "author": "Robin Arys <robin.arys@prior-it.be>",
+    "license": "UNLICENSED",
+    "bugs": {
+        "url": "https://app.clickup.com/24444453/v/li/210418606"
+    },
+    "homepage": "https://gitlab.com/priorit/piworks/pilocaliser-ts#readme",
+    "dependencies": {
+        "tslib": "^2.3.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.19.1",
+        "@babel/preset-env": "^7.19.1",
+        "@babel/preset-typescript": "^7.18.6",
+        "@babel/register": "^7.18.9",
+        "@types/jasmine": "~3.10.0",
+        "@types/luxon": "^2.3.2",
+        "@types/node": "^18.0.0",
+        "@typescript-eslint/eslint-plugin": "^5.30.0",
+        "@typescript-eslint/parser": "^5.30.0",
+        "eslint": "^8.18.0",
+        "eslint-config-standard": "^17.0.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-n": "^15.2.3",
+        "eslint-plugin-promise": "^6.0.0",
+        "jasmine": "~4.0.0",
+        "stylelint": "^13.13.1",
+        "stylelint-config-sass-guidelines": "^8.0.0",
+        "stylelint-scss": "^3.19.0",
+        "typescript": "^4.6.4"
+    },
+    "engines": {
+        "node": ">=13.0"
+    },
+    "type": "module"
+}
