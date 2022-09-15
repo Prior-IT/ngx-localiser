@@ -79,5 +79,14 @@
         "no-shadow": "error",
         "no-unused-expressions": "warn",
         "no-unused-vars": "off"
+    },
+    "env": {
+        "node": true
+    },
+    "globals": {
+        "navigator": true,
+        "console": true,
+        "window": true,
+        "document": true
     }
 }
