@@ -7,8 +7,9 @@ export function detectLanguage(): string | undefined {
         return undefined;
     }
 
-    let locale = window.navigator.languages ? window.navigator.languages[0] : undefined;
-    locale = locale || window.navigator.language || (window.navigator as any).browserLanguage || (window.navigator as any).userLanguage;
+    const navigator = window.navigator as any;
+    let locale = navigator.languages ? navigator.languages[0] : undefined;
+    locale = locale || navigator.language || navigator.browserLanguage || navigator.userLanguage;
 
     return locale?.replace(/_/g, '-').split('-')?.[0];
 }
