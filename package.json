@@ -1,7 +1,7 @@
 {
     "name": "@priorit/localiser",
     "version": "1.0.0",
-    "description": "Utility functions to fix localisation issues in TypeScript",
+    "description": "Utility functions to enable dynamic locale switching in Angular",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "files": [
@@ -14,7 +14,6 @@
         "build": "tsc -p tsconfig.json",
         "watch": "tsc -w -p tsconfig.json",
         "codelint": "eslint -c .eslintrc.json src/*",
-        "stylelint": "npx stylelint '**/*.scss'"
     },
     "repository": {
         "type": "git",
@@ -41,7 +40,6 @@
         "@babel/preset-typescript": "^7.18.6",
         "@babel/register": "^7.18.9",
         "@types/jasmine": "~3.10.0",
-        "@types/luxon": "^2.3.2",
         "@types/node": "^18.0.0",
         "@typescript-eslint/eslint-plugin": "^5.30.0",
         "@typescript-eslint/parser": "^5.30.0",
@@ -51,9 +49,6 @@
         "eslint-plugin-n": "^15.2.3",
         "eslint-plugin-promise": "^6.0.0",
         "jasmine": "~4.0.0",
-        "stylelint": "^16.2.1",
-        "stylelint-config-sass-guidelines": "^11.0.0",
-        "stylelint-scss": "^6.1.0",
         "typescript": "^4.6.4"
     },
     "engines": {
